@@ -20,4 +20,6 @@ from drinks import views
 urlpatterns = [
     path("admin/", admin.site.urls),
     path('drinks/', views.get_drinks),
+    path('drinks/<int:id>', views.single_drink),
+    
 ]
